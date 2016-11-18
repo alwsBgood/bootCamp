@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "BebasNeueBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/BebasNeueBold.woff2") format("woff2"), url("fonts/BebasNeueBold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Roboto Condensed-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Roboto Condensed-Bold.woff2") format("woff2"), url("fonts/Roboto Condensed-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Roboto Condensed-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Roboto Condensed-Light.woff2") format("woff2"), url("fonts/Roboto Condensed-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: "Roboto Condensed-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Roboto Condensed-Regular.woff2") format("woff2"), url("fonts/Roboto Condensed-Regular.woff") format("woff"); }

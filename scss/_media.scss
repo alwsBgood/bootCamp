@@ -1,0 +1,28 @@
+@import "bourbon";
+@import "vars.scss";
+
+
+@media only screen and (max-width : 1200px) {}
+
+@media only screen and (max-width : 992px) {}
+
+@media only screen and (max-width : 720px) {
+	#footer{
+		text-align: center !important;
+		position: static;
+		.tl{text-align: center;}
+		.politics{
+			text-align: center !important;
+			float: none;
+		}
+		.logo-gs{
+			float: none;
+			margin-top: 20px;
+			display: inline-block;
+		}
+	}
+}
+
+
+
+@media only screen and (max-width : 490px) {}
