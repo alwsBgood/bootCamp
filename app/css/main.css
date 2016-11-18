@@ -1157,6 +1157,9 @@ input:-ms-input-placeholder {
     font-size: 18px; }
   .title {
     font-size: 19px; }
+  header.scrolled {
+    height: 45px;
+    padding-top: 0; }
   header .nav {
     float: none;
     margin: 0 -10px;

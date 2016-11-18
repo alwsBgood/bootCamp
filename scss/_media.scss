@@ -433,6 +433,10 @@
 	section{padding: 60px 0 !important;}
 	.h2_desc{font-size: 18px;}
 	.title{font-size: 19px;}
+	header.scrolled{
+		height: 45px;
+		padding-top: 0;
+	}
 	header{
 		.nav{
 			float: none;
