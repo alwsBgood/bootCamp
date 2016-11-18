@@ -1,7 +1,4 @@
 @import url(../libs/niftymodal/component.css);
-@import url(../libs/slick/slick.min.css);
-@import url(../libs/fullPage/jquery.fullpage.min.css);
-@import url(../fonts/font-awesome/font-awesome.min.css);
 #sec_03 {
   padding: 120px 0 140px;
   background: url(../img/sec_03-bg-img.png) top center no-repeat;
@@ -287,7 +284,7 @@
     background: url(../img/sec_11-h2-bg.png) top center no-repeat;
     color: #061928; }
   #sec_11 .tabs__caption {
-    margin-bottom: 5px; }
+    margin-bottom: 25px; }
     #sec_11 .tabs__caption li {
       display: inline-block;
       width: 155px;
@@ -304,18 +301,20 @@
   #sec_11 .tabs__content .theme, #sec_11 .tabs__content .experts {
     display: inline-block;
     text-align: left;
-    padding: 20px 0 20px 50px;
+    padding: 0px 0 0px 50px;
     vertical-align: top;
     margin: 0 28px 0 28px;
     font-family: "Roboto Condensed-Light", sans-serif; }
     #sec_11 .tabs__content .theme span, #sec_11 .tabs__content .experts span {
       font-family: "Roboto Condensed-Bold", sans-serif; }
   #sec_11 .tabs__content .theme {
-    background: url(../img/sec_11-icon-1.png) left center no-repeat; }
+    background: url(../img/sec_11-icon-1.png) left center no-repeat;
+    max-width: 283px;
+    width: 100%; }
   #sec_11 .tabs__content .experts {
     background: url(../img/sec_11-icon-2.png) left center no-repeat; }
   #sec_11 .tabs__content [alt="Separator"] {
-    margin: 20px auto 45px;
+    margin: 35px auto 45px;
     display: block; }
   #sec_11 .tabs__content .tc.title {
     color: #db1426; }
@@ -828,7 +827,7 @@ input:-ms-input-placeholder {
   [id*='modal_callback'] {
     min-width: 470px; }
   header .logo {
-    margin-right: 15px; }
+    margin-right: 0px; }
   header .nav li + li {
     margin-left: 5px; }
   #sec_02 img {
@@ -924,8 +923,12 @@ input:-ms-input-placeholder {
   h2, h3 {
     font-size: 32px;
     line-height: 38px; }
-  header .nav {
+  header .phones {
     display: none; }
+  header .logo {
+    margin-right: 14px; }
+  header a {
+    font-size: 14px; }
   #sec_01 {
     padding: 105px 0 110px;
     background: #061928; }
@@ -1153,6 +1156,16 @@ input:-ms-input-placeholder {
     font-size: 18px; }
   .title {
     font-size: 19px; }
+  header .nav {
+    float: none;
+    margin: 0 -10px;
+    text-align: center; }
+    header .nav li + li {
+      margin-left: 0px; }
+  header a {
+    font-size: 12px; }
+  header .logo {
+    display: none; }
   #sec_01 h1 {
     font-size: 28px;
     line-height: 34px; }

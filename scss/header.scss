@@ -89,17 +89,37 @@ button span {
 }
 
 header{
-  background: #fff;
+  background: url(../img/header-bg.png) top center no-repeat;
   padding: 24px 0 15px;
+  width: 100%;
+  height: 137px;
+  z-index: 10;
+  transition: all 0.6s;
+  position: fixed;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  right: 0;
   .logo{
     float: left;
     margin-right: 35px;
   }
   .phones{
+    position: relative;
     float: right;
-    line-height: 19px;
     line-height: 36px;
+    .phone{
+      display: inline-block;
+      width: 25px;
+      height: 32px;
+      transition: 0.5s;
+      img{margin-bottom: -3px;}
+    }
+    .phone:hover{
+      transform: scale(1.2);
+    }
   }
+
   a{
     color: $main_color;
     font-size: 18px;
@@ -117,12 +137,19 @@ header{
   }
 }
 
+header.scrolled{
+  padding: 10px 0 15px;
+  height: 80px;
+  background-size: 100% 100%;
+}
+
 #sec_01{
   padding: 80px 0 110px;
+  margin-top: 79px;
   background: url(../img/sec_01-bg.jpg) top center no-repeat;
   color: #fff;
   h1{
-  	padding: 160px 0 0 0;
+  	padding: 162px 0 5px 0;
 		font: 58px/61px $Bebas;
 		text-transform: uppercase;
 		letter-spacing: .02em;
@@ -145,7 +172,7 @@ header{
 }
 
 #sec_02{
-	padding: 35px 0 105px;
+	padding: 25px 0 105px;
 	text-align: center;
 	.block_text{
 		display: inline-block;

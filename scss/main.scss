@@ -309,7 +309,7 @@
     color: $main_color;
   }
   .tabs__caption{
-    margin-bottom: 5px;
+    margin-bottom: 25px;
     li{
       display: inline-block;
       width: 155px;
@@ -327,16 +327,20 @@
     .theme, .experts{
       display: inline-block;
       text-align: left;
-      padding: 20px 0 20px 50px;
+      padding: 0px 0 0px 50px;
       vertical-align: top;
       margin: 0 28px 0 28px;
       font-family: $Light;
       span{font-family: $Bold;}
     }
-    .theme{background: url(../img/sec_11-icon-1.png) left center no-repeat;}
+    .theme{
+      background: url(../img/sec_11-icon-1.png) left center no-repeat;
+      max-width: 283px;
+      width: 100%;
+    }
     .experts{background: url(../img/sec_11-icon-2.png) left center no-repeat;}
     [alt="Separator"]{
-      margin:20px auto 45px;
+      margin:35px auto 45px;
       display: block;
     }
     .tc.title{color: $second_color;}
@@ -532,6 +536,3 @@ input{
 @import "_sketches.scss";
 @import "_media.scss";
 @import "../libs/niftymodal/component.css";
-@import "../libs/slick/slick.min.css";
-@import "../libs/fullPage/jquery.fullpage.min.css";
-@import "../fonts/font-awesome/font-awesome.min.css"

@@ -160,4 +160,12 @@ $( document ).ready(function() {
   $('#scrollup').click(function() {
     $('body,html').animate({scrollTop:0},1000);
   });
+
+  $(window).scroll(function(){
+    if ( $(document).scrollTop() > 200 ) {
+      $('header').addClass('scrolled');
+    } else {
+      $('header').removeClass('scrolled');
+    }
+  });
 });

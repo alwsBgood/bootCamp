@@ -34,7 +34,7 @@
 @media only screen and (max-width : 992px) {
 	[id*='modal_callback']{min-width: 470px;}
 	header{
-		.logo{margin-right: 15px;}
+		.logo{margin-right: 0px;}
 		.nav{
 			li+li{margin-left: 5px;}
 		}
@@ -166,7 +166,11 @@
 	.btn:before{display: none;}
 	h2, h3{font-size: 32px; line-height: 38px;}
 	header{
-		.nav{display: none;}
+		.phones{
+			display: none;
+		}
+		.logo{margin-right: 14px;}
+		a{font-size: 14px;}
 	}
 	#sec_01{
 		padding: 105px 0 110px;
@@ -429,6 +433,18 @@
 	section{padding: 60px 0 !important;}
 	.h2_desc{font-size: 18px;}
 	.title{font-size: 19px;}
+	header{
+		.nav{
+			float: none;
+			margin: 0 -10px; 
+			text-align: center;
+			li+li{margin-left: 0px;}
+		}
+		a{font-size: 12px;}
+		.logo{
+			display: none;
+		}
+	}
 	#sec_01{
 		h1{
 			font-size: 28px;
