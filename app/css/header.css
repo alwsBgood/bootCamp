@@ -75,13 +75,14 @@ button span {
 
 header {
   background: #fff;
-  padding: 20px 0 15px; }
+  padding: 24px 0 15px; }
   header .logo {
     float: left;
     margin-right: 35px; }
   header .phones {
     float: right;
-    line-height: 19px; }
+    line-height: 19px;
+    line-height: 36px; }
   header a {
     color: #061928;
     font-size: 18px; }
@@ -100,7 +101,7 @@ header {
   background: url(../img/sec_01-bg.jpg) top center no-repeat;
   color: #fff; }
   #sec_01 h1 {
-    padding: 157px 0 0 0;
+    padding: 160px 0 0 0;
     font: 58px/61px "BebasNeueBold", sans-serif;
     text-transform: uppercase;
     letter-spacing: .02em;

@@ -32,7 +32,7 @@
   padding: 60px 0 70px;
   text-align: center;
   .h2_wrapper{
-    padding: 33px 0 75px;
+    padding: 45px 0 75px;
     margin-bottom: 53px;
     text-align: center;
     background: url(../img/sec_04-h2-bg.png) top center no-repeat;
@@ -197,7 +197,8 @@
     margin-bottom: 15px;
   }
   form{
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     margin: 40px auto;
     .btn{
       margin: 15px auto 0;
@@ -251,11 +252,11 @@
 }
 
 #sec_10{
-  padding: 30px 0 20px;
+  padding: 35px 0 20px;
   text-align: center;
   h2{
-    padding: 25px 0 30px;
-    margin-bottom: 45px;
+    padding: 35px 0 30px;
+    margin-bottom: 35px;
     text-align: center;
     background: url(../img/sec_10-h2-bg.png) top center no-repeat;
     color: #fff;
@@ -273,7 +274,7 @@
   .item:nth-child(4){background: url(../img/sec_10-icon-3.png) left center no-repeat}
   .item:nth-child(5){background: url(../img/sec_10-icon-4.png) left center no-repeat}
   h3{
-    margin: -95px 0 10px;
+    margin: -85px 0 10px;
   }
   .wood{
     padding: 185px 0 125px;
@@ -373,7 +374,7 @@
 }
 
 #sec_12{
-  padding: 50px 0 100px;
+  padding: 45px 0 100px;
   text-align: center;
   background: url(../img/sec_12-hash.png) top 210px center no-repeat;
   h2{
@@ -442,7 +443,7 @@
 }
 
 footer{
-  padding: 10px 0 200px;
+  padding: 15px 0 50px;
   text-align: center;
   a{
     display: inline-block;
@@ -459,7 +460,7 @@ div[id*="modal_expert"]{
     min-height: 530px;
     padding: 60px 60px 60px 80px;
     background: url(../img/modal-bg.png) top center no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
   }
   .btn_close_modal{
     top: 30px;
@@ -485,6 +486,7 @@ input{
   height: 60px;
   background: transparent url(../img/input-bg.png) center no-repeat;
   background-size: 100% 100%;
+  letter-spacing: 0.1em;
   color: $main_color;
   font: 18px $Bebas;
   text-align: center;
@@ -495,6 +497,7 @@ input{
 .white_form{
     input{
     background: transparent url(../img/input-bg-white.png) center no-repeat;
+    color: #fff;
   }
   input::-webkit-input-placeholder{
     color: black;
