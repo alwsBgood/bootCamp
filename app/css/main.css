@@ -927,9 +927,12 @@ input:-ms-input-placeholder {
   header .phones {
     display: none; }
   header .logo {
-    margin-right: 14px; }
+    display: none; }
+  header .nav {
+    float: none;
+    text-align: center; }
   header a {
-    font-size: 14px; }
+    font-size: 16px; }
   #sec_01 {
     padding: 105px 0 110px;
     background: #061928; }
@@ -1158,18 +1161,15 @@ input:-ms-input-placeholder {
   .title {
     font-size: 19px; }
   header.scrolled {
-    height: 45px;
-    padding-top: 0; }
-  header .nav {
-    float: none;
-    margin: 0 -10px;
+    height: 53px;
+    padding-top: 4px; }
+  header {
     text-align: center; }
-    header .nav li + li {
-      margin-left: 0px; }
-  header a {
-    font-size: 12px; }
-  header .logo {
-    display: none; }
+    header .nav {
+      display: none; }
+    header .logo {
+      display: inline-block;
+      float: none; }
   #sec_01 h1 {
     font-size: 28px;
     line-height: 34px; }

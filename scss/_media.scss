@@ -169,8 +169,12 @@
 		.phones{
 			display: none;
 		}
-		.logo{margin-right: 14px;}
-		a{font-size: 14px;}
+		.logo{display: none;}
+		.nav{
+			float: none;
+			text-align: center;
+		}
+		a{font-size: 16px;}
 	}
 	#sec_01{
 		padding: 105px 0 110px;
@@ -434,19 +438,17 @@
 	.h2_desc{font-size: 18px;}
 	.title{font-size: 19px;}
 	header.scrolled{
-		height: 45px;
-		padding-top: 0;
+		height: 53px;
+		padding-top: 4px;
 	}
 	header{
+		text-align: center;
 		.nav{
-			float: none;
-			margin: 0 -10px; 
-			text-align: center;
-			li+li{margin-left: 0px;}
-		}
-		a{font-size: 12px;}
-		.logo{
 			display: none;
+		}
+		.logo{
+			display: inline-block;
+			float: none;
 		}
 	}
 	#sec_01{

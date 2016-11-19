@@ -10,6 +10,8 @@ $(function() {
     var msg = btn.closest('form').find('input, textarea, select');
     var send_btn = btn.closest('form').find('[name=send]');
     var send_options = btn.closest('form').find('[name=campaign_token]');
+    var send_adress = btn.closest('form').find('[name=send_adress]').val();
+    var goal = btn.closest('form').find('[name=goal]').val();
 
 
 
@@ -47,49 +49,24 @@ $(function() {
       });
       $(send_options).each(function() {
         var form = $(this).closest('form'), name = form.find('.name').val();
-        if ($(this).val() == '') {
-          $.ajax({
-            type: 'POST',
-            url: 'mail.php',
-            data: msg,
-            success: function() {
-              $('form').trigger("reset");
-              setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
-                    // Настройки модального окна после удачной отправки
-                        $('div.md-show').removeClass('md-show');
-                        $('form').trigger("reset");
-                        $("#call_ok")[0].click();
-                  },
-                  error: function(xhr, str) {
-                    alert('Возникла ошибка: ' + xhr.responseCode);
-                  }
-                });
-          } else {
-          $.ajax({
-            type: 'POST',
-            url: 'mail.php',
-            data: msg,
-            success:
-            $.ajax({
-              type: 'POST',
-              url: 'https://app.getresponse.com/add_subscriber.html',
-              data: msg,
-              statusCode: {0:function() {
-                $( "#modal_callback_ok h4" ).remove();
-                $( "#modal_callback_ok" ).prepend("<h4>"+name+",</h4>");
-                $('form').trigger("reset");
-                setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
-                // Настройки модального окна после удачной отправки
-                $('div.md-show').removeClass('md-show');
-                $('form').trigger("reset");
-                $("#call_ok")[0].click();
-              }}
-            }),
-            error:  function(xhr, str) {
-              alert('Возникла ошибка: ' + xhr.responseCode);
-            }
-          });
-        }
+        $.ajax({
+          type: 'POST',
+          url: send_adress,
+          data: msg,
+          success: function() {
+            $('form').trigger("reset");
+            setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
+            // Настройки модального окна после удачной отправки
+            $('div.md-show').removeClass('md-show');
+            $('form').trigger("reset");
+            $("#call_ok")[0].click();
+          },
+          error: function(xhr, str) {
+            $('div.md-show').removeClass('md-show');
+            $('form').trigger("reset");
+            $("#call_ok")[0].click();
+          }
+        });
       });
     }
     return false;
@@ -112,7 +89,7 @@ $(function() {
 //  INPUT TEL MASK
 
 jQuery(function($){
- $("input[type='tel']").mask("+9 (999) 999-9999");
+ $("input[type='tel']").mask("+99 (999) 999-9999");
 });
 
 
