@@ -57,14 +57,12 @@ $(function() {
             $('form').trigger("reset");
             setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
             // Настройки модального окна после удачной отправки
-            $('div.md-show').removeClass('md-show');
-            $('form').trigger("reset");
-            $("#call_ok")[0].click();
+            yaCounter41024484.reachGoal(goal);;
+            window.location = "http://allinsol.com/bootcamp/success/"
           },
           error: function(xhr, str) {
-            $('div.md-show').removeClass('md-show');
-            $('form').trigger("reset");
-            $("#call_ok")[0].click();
+            yaCounter41024484.reachGoal(goal);;
+            window.location = "http://allinsol.com/bootcamp/success/"
           }
         });
       });
