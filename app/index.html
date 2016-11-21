@@ -2,15 +2,24 @@
 <html class="no-js" lang="ru">
 
 <head>
-
+<script>
+ dataLayer = [];
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MHTZRB');</script>
+<!-- End Google Tag Manager -->
 	<meta charset="utf-8">
 
 	<title>BOOT CAMP</title>
 
-	<meta name="description" content="">
+	<meta name="description" content="ПЕРВЫЙ В УКРАИНЕ BOOT CAMP ДЛЯ СОБСТВЕННИКОВ БИЗНЕСА. Месяц работы над вашим бизнесом в режиме “садись и делай” ">
 	<meta name="keywords" content="">
 
-	<meta property="og:description" content="" />
+	<meta property="og:description" content="Месяц работы над вашим бизнесом в режиме “садись и делай” " />
 
 	<meta property="og:image" content="http://allinsol.com/bootcamp/img/og.png" />
     <meta property="og:image:type" content="image/png" />
@@ -18,7 +27,7 @@
     <meta property="og:image:height" content="400" />
 
 	<meta property="og:site_name" content=""/>
-	<meta property="og:title" content="" />
+	<meta property="og:title" content="ПЕРВЫЙ В УКРАИНЕ BOOT CAMP ДЛЯ СОБСТВЕННИКОВ БИЗНЕСА" />
 	<meta property="og:url" content=""/>
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,6 +69,11 @@
 </head>
 
 <body data-img="img/land.jpg">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHTZRB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter41024484 = new Ya.Metrika({ id:41024484, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/41024484" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 <div class="bar-long"></div>
 
@@ -77,7 +91,7 @@
           <li><a class="scroll" href="#sec_11">Программа</a></li>
         </ul>
         <div class="phones">
-          <a data-modal="modal_callback_call" class="md-trigger phone">
+          <a id="btnCallBack" data-modal="modal_callback_call" class="md-trigger phone">
            <img src="img/phone.png" alt=""></a>
           <a href="tel:+380933432126">+38 (093) 343-21-26</a>
         </div>
@@ -94,8 +108,7 @@
     <div class="row">
       <div class="col-12 tc">
         <h1><span>Первый в Украине Boot Camp</span> <br /> для собственников бизнеса</h1>
-        <p class="h2_desc">Месяц работы над вашим бизнесом в режиме “садись и делай” <br /> Месяц работы над вашим бизнесом в режиме</p>
-        <a class="md-trigger btn" data-modal="modal_callback"><span>ЗАПИСАТЬСЯ НА консультацию</span></a>
+        <a id="btnFirstSection" class="md-trigger btn" data-modal="modal_callback"><span>ЗАПИСАТЬСЯ НА консультацию</span></a>
       </div>
     </div>
   </div>
@@ -271,7 +284,7 @@
     <div class="row">
       <div class="wood">
         <h3>Уверены, что готовы к вызову?</h3>
-        <a class="md-trigger btn" data-modal="modal_callback"><span>ЗАПИСАТЬСЯ НА консультацию</span></a>
+        <a id="btnSixthSection" class="md-trigger btn" data-modal="modal_callback"><span>ЗАПИСАТЬСЯ НА консультацию</span></a>
       </div>
     </div>
   </div>
@@ -329,6 +342,7 @@
           <input type="hidden" name="project_name" value="BootCamp">
           <input type="hidden" name="admin_email" value="manager.meetup@gmail.com">
           <input type="hidden" name="form_subject" value="Заказ консультации">
+          <input type="hidden" name="form_type" value="firstForm ">
           <input type="hidden" name="send_adress" value="https://docs.google.com/forms/d/e/1FAIpQLSdjn8yx8knHktYViGWSsRRjKUZoXBFVA_3Ik_VmFvDfGxpPPg/formResponse">
           <input type="hidden" name="goal" value="zayavka">
           <!-- END Hidden Required Fields -->
@@ -470,7 +484,7 @@
     <div class="row wood">
       <h3>Boot Camp — это не о красивой обертке, <br /> улыбках или устрицах на кофе-брейк </h3>
       <p class="h2_desc">Нам интересно то же, что и вам — результат, рост и прибыль. <br /> Хотите узнать, каким будет ваш бизнес после?</p>
-      <a class="md-trigger btn" data-modal="modal_callback"><span>НАЧать ДЕйствовать</span></a>
+      <a id="btnTenthSection" class="md-trigger btn" data-modal="modal_callback"><span>НАЧать ДЕйствовать</span></a>
     </div>
   </div>
 </section>
@@ -675,6 +689,7 @@
               <input type="hidden" name="project_name" value="BootCamp">
               <input type="hidden" name="admin_email" value="manager.meetup@gmail.com">
               <input type="hidden" name="form_subject" value="Заказ консультации">
+              <input type="hidden" name="form_type" value="secondForm ">
               <input type="hidden" name="send_adress" value="https://docs.google.com/forms/d/e/1FAIpQLSdjn8yx8knHktYViGWSsRRjKUZoXBFVA_3Ik_VmFvDfGxpPPg/formResponse">
               <input type="hidden" name="goal" value="zayavka">
               <!-- END Hidden Required Fields -->
@@ -746,6 +761,7 @@
                   <input type="hidden" name="project_name" value="BootCamp">
                   <input type="hidden" name="admin_email" value="manager.meetup@gmail.com">
                   <input type="hidden" name="form_subject" value="Заказ обратного звонка">
+                  <input type="hidden" name="form_type" value="callbackForm ">
                   <input type="hidden" name="send_adress" value="https://docs.google.com/forms/d/e/1FAIpQLScCH3asVB3qfblYRS9IfoVGqZKJh74a8AohUwYlj6oAmlrXrQ/formResponse">
                   <input type="hidden" name="goal" value="zvonok">
                   <!-- END Hidden Required Fields -->
@@ -798,6 +814,7 @@
                     <input type="hidden" name="project_name" value="BootCamp">
                     <input type="hidden" name="admin_email" value="manager.meetup@gmail.com">
                     <input type="hidden" name="form_subject" value="Заказ консультации">
+                    <input type="hidden" name="form_type" value="modalForm ">
                     <input type="hidden" name="send_adress" value="https://docs.google.com/forms/d/e/1FAIpQLSdjn8yx8knHktYViGWSsRRjKUZoXBFVA_3Ik_VmFvDfGxpPPg/formResponse">
                     <input type="hidden" name="goal" value="zayavkaModal">
                     <!-- END Hidden Required Fields -->

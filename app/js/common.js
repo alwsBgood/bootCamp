@@ -10,6 +10,7 @@ $(function() {
     var msg = btn.closest('form').find('input, textarea, select');
     var send_btn = btn.closest('form').find('[name=send]');
     var send_options = btn.closest('form').find('[name=campaign_token]');
+    var formType = btn.closest('form').find('[name=form_type]').val();
     var send_adress = btn.closest('form').find('[name=send_adress]').val();
     var goal = btn.closest('form').find('[name=goal]').val();
 
@@ -57,12 +58,21 @@ $(function() {
             $('form').trigger("reset");
             setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
             // Настройки модального окна после удачной отправки
+            dataLayer.push({
+                'form_type': formType,
+                'event': "form_submit"
+            });
+            
             yaCounter41024484.reachGoal(goal);;
             window.location = "http://allinsol.com/bootcamp/success/"
           },
           error: function(xhr, str) {
-            yaCounter41024484.reachGoal(goal);;
-            window.location = "http://allinsol.com/bootcamp/success/"
+            yaCounter41024484.reachGoal(goal);
+            dataLayer.push({
+                'form_type': formType,
+                'event': "form_submit"
+            });
+            setTimeout(function(){  window.location = "http://allinsol.com/bootcamp/success/" }, 1000);
           }
         });
       });
