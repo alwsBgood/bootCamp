@@ -269,10 +269,18 @@
     text-align: left;
     .title{margin-bottom: 10px;}
   }
+  .item-big{
+    max-width: 680px;
+    width: 100%;
+    padding-left: 130px;
+    .title{font-size: 22px;}
+    .text{font-size: 19px;}
+  }
   .item:nth-child(2){background: url(../img/sec_10-icon-1.png) left center no-repeat}
   .item:nth-child(3){background: url(../img/sec_10-icon-2.png) left center no-repeat}
   .item:nth-child(4){background: url(../img/sec_10-icon-3.png) left center no-repeat}
   .item:nth-child(5){background: url(../img/sec_10-icon-4.png) left center no-repeat}
+  .item:nth-child(6){background: url(../img/sec_10-icon-5.png) left center no-repeat}
   h3{
     margin: -85px 0 10px;
   }
@@ -302,6 +310,7 @@
   background: url(../img/sec_11-bg.png) top center no-repeat;
   color: #fff;
   text-align: center;
+  background-size: cover;
   h2{
     padding: 35px 0 30px;
     margin-bottom: 40px;
@@ -351,6 +360,7 @@
       display: inline-block;
       vertical-align: top;
       margin: 0 -8px 30px 120px;
+      max-width: 400px;
       li+li{margin-top: 23px;}
       li{position: relative;}
       li:before{

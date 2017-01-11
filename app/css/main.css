@@ -246,6 +246,14 @@
     text-align: left; }
     #sec_10 .item .title {
       margin-bottom: 10px; }
+  #sec_10 .item-big {
+    max-width: 680px;
+    width: 100%;
+    padding-left: 130px; }
+    #sec_10 .item-big .title {
+      font-size: 22px; }
+    #sec_10 .item-big .text {
+      font-size: 19px; }
   #sec_10 .item:nth-child(2) {
     background: url(../img/sec_10-icon-1.png) left center no-repeat; }
   #sec_10 .item:nth-child(3) {
@@ -254,6 +262,8 @@
     background: url(../img/sec_10-icon-3.png) left center no-repeat; }
   #sec_10 .item:nth-child(5) {
     background: url(../img/sec_10-icon-4.png) left center no-repeat; }
+  #sec_10 .item:nth-child(6) {
+    background: url(../img/sec_10-icon-5.png) left center no-repeat; }
   #sec_10 h3 {
     margin: -85px 0 10px; }
   #sec_10 .wood {
@@ -277,7 +287,8 @@
   overflow: hidden;
   background: url(../img/sec_11-bg.png) top center no-repeat;
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  background-size: cover; }
   #sec_11 h2 {
     padding: 35px 0 30px;
     margin-bottom: 40px;
@@ -324,7 +335,8 @@
     text-align: left;
     display: inline-block;
     vertical-align: top;
-    margin: 0 -8px 30px 120px; }
+    margin: 0 -8px 30px 120px;
+    max-width: 400px; }
     #sec_11 .tabs__content ul li + li {
       margin-top: 23px; }
     #sec_11 .tabs__content ul li {
@@ -944,6 +956,10 @@ input:-ms-input-placeholder {
       padding: 0; }
       #sec_01 h1 span {
         color: #fff; }
+    #sec_01 .afterheader {
+      font: 20px "Roboto Condensed-Regular", sans-serif; }
+      #sec_01 .afterheader br {
+        display: none; }
     #sec_01 .h2_desc {
       line-height: 34px; }
   #sec_02 img {
@@ -1171,8 +1187,13 @@ input:-ms-input-placeholder {
       display: inline-block;
       float: none; }
   #sec_01 h1 {
+    margin-top: 0;
     font-size: 28px;
     line-height: 34px; }
+  #sec_01 .afterheader {
+    font: 20px "Roboto Condensed-Regular", sans-serif; }
+    #sec_01 .afterheader br {
+      display: none; }
   .btn {
     background: #db1426;
     max-width: 300px;
