@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "RobotoRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.woff2") format("woff2"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"); }
+
+@font-face {
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/FontAwesome/FontAwesome.woff2") format("woff2"), url("../fonts/FontAwesome/FontAwesome.woff") format("woff"); }
+
+@font-face {
+  font-family: "BebasNeueBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/BebasNeueBold/BebasNeueBold.woff2") format("woff2"), url("../fonts/BebasNeueBold/BebasNeueBold.woff") format("woff"); }
+
+@font-face {
+  font-family: "RobotoCondensedBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Roboto Condensed-Bold/Roboto Condensed-Bold.woff2") format("woff2"), url("../fonts/Roboto Condensed-Bold/Roboto Condensed-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "RobotoCondensedLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Roboto Condensed-Light/Roboto Condensed-Light.woff2") format("woff2"), url("../fonts/Roboto Condensed-Light/Roboto Condensed-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: "RobotoCondensedRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Roboto Condensed-Regular/Roboto Condensed-Regular.woff2") format("woff2"), url("../fonts/Roboto Condensed-Regular/Roboto Condensed-Regular.woff") format("woff"); }
