@@ -427,7 +427,8 @@ footer {
   footer a {
     display: inline-block;
     margin: 0 11px;
-    font: 19px "Roboto Condensed-Light", sans-serif; }
+    font: 19px "Roboto Condensed-Light", sans-serif;
+    color: #061928; }
 
 div[id*="modal_expert"] {
   max-width: 720px;
