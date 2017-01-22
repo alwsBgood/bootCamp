@@ -1,7 +1,7 @@
-<!-- <?php
-    // require 'db/data.php';
-    // require 'db/visits.php';
-?> -->
+<?php
+     require 'db/data.php';
+     require 'db/visits.php';
+?>
 
 <!DOCTYPE html>
 <html class="no-js" lang="ru">
@@ -806,7 +806,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a class="md-trigger" data-modal="modal_politics_one">Политика  конфиденциальности</a>
         <a class="md-trigger" data-modal="modal_politics_two">Отказ от  ответственности</a>
         <a class="md-trigger" data-modal="modal_politics_three">Согласие с  рассылкой</a>
-        <a class="md-trigger" target="_blanc" href="http://allinsol.com/bootcamp/offer_bootcamp.pdf" >Офферта</a>
+        <a target="_blanc" href="http://allinsol.com/bootcamp/offer_bootcamp.pdf" >Офферта</a>
       </div>
     </div>
   </div>
