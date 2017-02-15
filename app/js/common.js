@@ -62,17 +62,19 @@ $(function() {
                 'form_type': formType,
                 'event': "form_submit"
             });
-            
-            yaCounter41024484.reachGoal(goal);;
-            window.location = "http://allinsol.com/bootcamp/success/"
+            yaCounter41024484.reachGoal(goal);
+            setTimeout(function(){  window.location = "http://allinsol.com/bootcamp/success/" }, 3000);
           },
           error: function(xhr, str) {
+            $('form').trigger("reset");
+            $('div.md-show').removeClass('md-show');
+            setTimeout(function(){  $("[name=send]").removeAttr("disabled"); }, 1000);
             yaCounter41024484.reachGoal(goal);
             dataLayer.push({
                 'form_type': formType,
                 'event': "form_submit"
             });
-            setTimeout(function(){  window.location = "http://allinsol.com/bootcamp/success/" }, 1000);
+            setTimeout(function(){  window.location = "http://allinsol.com/bootcamp/success/" }, 3000);
           }
         });
       });
@@ -154,3 +156,31 @@ $( document ).ready(function() {
     }
   });
 });
+
+// var redirect = function(waitFor) {
+//     return function(signal) {
+//         waitFor[signal] = 1;
+//         for (var s in waitFor) if (waitFor[s] == 0) return;
+//         _redirect();
+//     }
+// }({timeout:0,ga:0});
+
+// var redirected = false;
+// var _redirect = function () {
+//     if (!redirected) {
+//         redirected = true;
+//         window.location.replace("http://allinsol.com/bootcamp/success/");
+//     }
+// };
+
+// (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+// new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+// j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+// 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+// })(window,document,'script','dataLayer','GTM-MHTZRB', 'ga');
+
+// ga('send', 'pageview', {
+//     'hitCallback': function () {
+//         redirect("ga");
+//     }
+// });
