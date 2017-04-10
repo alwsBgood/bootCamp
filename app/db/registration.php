@@ -14,11 +14,11 @@ $database = "allinsol_reg"; // БД
 
 // Подключение к базе данных
 $db = mysql_connect($db_host,$db_user,$db_password) or die("Не могу создать соединение ");
- 
+
 // Выборка базы
 mysql_select_db($database, $db);
 
-mysql_query("SET NAMES 'utf8'"); 
+mysql_query("SET NAMES 'utf8'");
 mysql_query("SET CHARACTER SET 'utf8'");
 mysql_query("SET SESSION collation_connection = 'utf8_general_ci'");
 /* Log*/
@@ -79,7 +79,7 @@ $data = array(
   'email'     => $email,
   'registrationType' => getVar('registrationType'),
   'orderType' => getVar('orderType'),
-  'date_visited' => date("d.m.Y"),
+  'date_visited' => date("Y.m.d"),
   'time_visited' => date("G:i:s"),
   'page_url' => getVar('page_url'),
   'user_agent' => getVar('user_agent'),

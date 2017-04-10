@@ -1,20 +1,6 @@
 <?php
   $user_agent   =  $_SERVER['HTTP_USER_AGENT'];
 
-  function get_client_county_city($ip) {
-    require 'geoip/geoip2.phar';
-
-    $db = __DIR__ . '/geoip/GeoLite2-City.mmdb';
-
-    $reader = new GeoIp2\Database\Reader($db);
-
-
-    $record = $reader->city($ip);
-    $country_city = $record->city->name;
-
-    return $country_city;
-  }
-
   function get_client_ip() {
     $ipaddress = '';
     if (isset($_SERVER['HTTP_CLIENT_IP']))
@@ -32,7 +18,7 @@
     else
         $ipaddress = 'UNKNOWN';
 
-    if (!empty($_GET['ip'])) { // це для себе щоб тестувать
+    if (!empty($_GET['ip'])) {
       $ipaddress = $_GET['ip'];
     }
 
@@ -71,9 +57,9 @@
   }
 
   $data = array(
-    'date_visited' => date("d.m.Y"),
+    'date_visited' => date("Y.m.d"),
     'time_visited' => date("G:i:s"),
-    'page_url'     => $_SERVER['HTTP_HOST'],
+    'page_url'     => 'http://allinsol.com/bootcamp/',
     'utm_source'   => isset($_GET['utm_source']) ? $_GET['utm_source'] : null,
     'utm_campaign' => isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : null,
     'utm_medium'   => isset($_GET['utm_medium']) ? $_GET['utm_medium'] : null,
@@ -81,7 +67,6 @@
     'utm_content'  => isset($_GET['utm_content']) ? $_GET['utm_content'] : null,
     'ref'          => isset($_SERVER["HTTP_REFERER"]) ? $_SERVER["HTTP_REFERER"] : null,
     'ip_address'   => get_client_ip(),
-    'city'         => get_client_ip(),
     'client_id'    => isset($_COOKIE["_ga"]) ? substr($_COOKIE["_ga"], 6) : null,
     'utmcsr'       => isset($utmcsr) ? $utmcsr : null,
     'utmccn'       => isset($utmccn) ? $utmccn : null,
