@@ -1,7 +1,7 @@
-<?php
+<!-- <?php
      require 'db/data.php';
      require 'db/visits.php';
-?>
+?> -->
 
 <!DOCTYPE html>
 <html class="no-js" lang="ru">
@@ -373,6 +373,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <input type="hidden" name="affiliate_id" value="<?php echo $data['affiliate_id']; ?>">
           <input type="hidden" name="product_id" value="2167809000000987463">
           <input type="hidden" name="product_name" value="&laquo;BootCamp 4&raquo;">
+          <input type="hidden" name="lead_source" value="Landing:Bootcamp">
           <!-- END Hidden Required Fields -->
 
           <span class="field">
@@ -761,6 +762,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <input type="hidden" name="affiliate_id" value="<?php echo $data['affiliate_id']; ?>">
               <input type="hidden" name="product_id" value="2167809000000987463">
               <input type="hidden" name="product_name" value="&laquo;BootCamp 4&raquo;">
+              <input type="hidden" name="lead_source" value="Landing:Bootcamp">
               <!-- END Hidden Required Fields -->
 
               <span class="field">
@@ -854,6 +856,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <input type="hidden" name="affiliate_id" value="<?php echo $data['affiliate_id']; ?>">
                   <input type="hidden" name="product_id" value="2167809000000987463">
                   <input type="hidden" name="product_name" value="&laquo;BootCamp 4&raquo;">
+                  <input type="hidden" name="lead_source" value="Landing:Bootcamp">
                   <!-- END Hidden Required Fields -->
 
                   <span class="field">
@@ -927,6 +930,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <input type="hidden" name="affiliate_id" value="<?php echo $data['affiliate_id']; ?>">
                     <input type="hidden" name="product_id" value="2167809000000987463">
                     <input type="hidden" name="product_name" value="&laquo;BootCamp 4&raquo;">
+                    <input type="hidden" name="lead_source" value="Landing:Bootcamp">
                     <!-- END Hidden Required Fields -->
 
                     <span class="field">
