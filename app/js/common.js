@@ -11,7 +11,9 @@ $(function() {
         var ref = btn.closest('form').find('[required]');
         var loc = ymaps.geolocation.city+', '+ymaps.geolocation.region+', '+ymaps.geolocation.country;
 
-        $('[name=city').val(loc);
+        $.get("http://ipinfo.io", function(response) {
+          $('[name=city').val(response.city + ', ' + response.country)
+        }, "jsonp");
         var msg = btn.closest('form').find('input, textarea, select');
         var send_btn = btn.closest('form').find('[name=send]');
         var send_adress = btn.closest('form').find('[name=send_adress]').val();
@@ -54,7 +56,7 @@ $(function() {
             
                 // Send data from form to zohoCRM
         
-            var form_data = $(this).closest('form').serializeArray();    
+            var form_data = $(this).closest('form').serializeArray();
             var form_data_bootcamp = {};
 
             $.each(form_data, function(i, v) {
